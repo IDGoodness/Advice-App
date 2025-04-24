@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react'
+import Card from '../Components/card'
 
 const Home = () => {
-
       const [advice, setAdvice] = useState(null)
 
       const fetchAdvice = () => {
@@ -19,18 +19,12 @@ const Home = () => {
 
   return (
     <>
-        <div>
-            <h1 className='text-3xl font-bold underline text-center'>Advice</h1>
-            {advice ? (
-              <div className='text-center'>
-                <p>{advice.slip.advice}</p>
-              </div>
-            ) : (
-            <p className='text-center'>Loading...</p>
-        )}
-        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4' onClick={fetchAdvice}>Get New Advice</button>
-        </div>
-    
+    <div className='flex items-center justify-center h-[100vh] bg-[#191d23] '>
+    <Card
+      advice={advice}
+      fetchAdvice={fetchAdvice}
+    />
+    </div>
     </>
   )
 }
