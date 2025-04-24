@@ -7,10 +7,10 @@ const Card = ({advice}) => {
         console.log(advice.slip.advice);
       }    
   return (
-    <div className='bg-[#2f343c] relative flex-col rounded-md flex items-center justify-evenly p-10 shadow w-[90%] h-[50%] max-w-[500px] max-h-[400px]'>
+    <div className='bg-[#2f343c] relative flex-col rounded-md flex items-center justify-evenly p-10 shadow w-[90%] min-h-[50%] max-w-[500px] max-h-[400px]'>
         <p className='text-[12px] tracking-widest text-[#53ffaa] text'>ADVICE #{}</p>
             {advice && advice.slip && advice.slip.advice ? (
-                <p className='text-[white] text-[25px] font-bold  flex flex-wrap justify-center items-center w-[100%] text-center h-[60%]'>
+                <p className='text-[white] text-[15px] sm:text-[25px] font-bold  flex flex-wrap justify-center items-center w-[100%] h-[60%] text-center '>
                 {advice.slip.advice}
                 </p>
             ): (
