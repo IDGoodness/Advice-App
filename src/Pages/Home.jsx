@@ -19,12 +19,10 @@ const Home = () => {
 
   return (
     <>
-    <div className='flex items-center justify-center h-[100vh] bg-[#191d23] '>
     <Card
       advice={advice}
       fetchAdvice={fetchAdvice}
     />
-    </div>
     </>
   )
 }

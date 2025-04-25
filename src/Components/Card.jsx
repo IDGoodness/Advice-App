@@ -1,13 +1,21 @@
 import divider_mobile from '../assets/pattern-divider-mobile.svg'
 import divider_desktop from '../assets/pattern-divider-desktop.svg'
 import die from '../assets/icon-dice.svg'
+import {Link} from 'react-router-dom'
 
 const Card = ({ advice, fetchAdvice }) => {
     if (advice && advice.slip && advice.slip.advice) {
         console.log(advice.slip.advice);
+        // console.log(advice.slip.id);
     }    
     return (
-    <div className='bg-[#2f343c] relative flex-col rounded-md flex items-center justify-evenly p-10 shadow w-[90%] min-h-[50%] max-w-[500px] max-h-[400px]'>
+    <div className='bg-[#2f343c] relative flex-col rounded-md flex  items-center justify-evenly p-10 shadow w-[90%] min-h-[50%] max-w-[500px] max-h-[400px]'>
+
+        <Link to={'/search'}
+            className='absolute top-[-23px] w-14 h-14 rounded-full bg-green-500 flex items-center justify-center transition duration-300 ease-in-out  hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.5)] active:scale-95'>
+                <span class="material-icons-round text-[#14181f] transition duration-300 hover:scale-110">search</span>
+        </Link>
+
         <p className='text-[12px] tracking-widest text-[#53ffaa] text'>ADVICE #{}</p>
             {advice && advice.slip && advice.slip.advice ? (
                 <p className='text-[white] text-[15px] sm:text-[25px] font-bold  flex flex-wrap justify-center items-center w-[100%] h-[60%] text-center '>
