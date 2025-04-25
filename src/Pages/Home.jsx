@@ -1,5 +1,5 @@
 import { useState, useEffect} from 'react'
-import Card from '../Components/card'
+import Card from '../Components/Card'
 
 const Home = () => {
     const [advice, setAdvice] = useState(null)
