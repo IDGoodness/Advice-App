@@ -45,12 +45,6 @@ const Home = () => {
 
   return (
     <>
-<<<<<<< HEAD
-    <Card
-      advice={advice}
-      fetchAdvice={fetchAdvice}
-    />
-=======
         <div className='flex items-center justify-center h-[100vh] bg-[#191d23] '>
             {showInstallButton && (
             <div>
@@ -61,7 +55,6 @@ const Home = () => {
             </div>
             )}
         </div>
->>>>>>> 7477cb788dad83a4717d8dce78db013da7a19a95
     </>
   )
 }

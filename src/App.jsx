@@ -1,10 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import "./App.css";
 import Home from "./Pages/Home";
 import Search from "./Pages/Search";
 
 
 function App() {
+
+  useEffect(() => {
+    console.log("App mounted");
+  }, []);
+
 
   return (
     <>
