@@ -53,12 +53,12 @@ const Home = () => {
   return (
     <>
       <div className="flex items-center justify-center h-[100vh] bg-[#191d23]">
-        <div>
+        <div className="">
           <Card advice={advice} fetchAdvice={fetchAdvice} />
           {showInstallButton && (
             <button
               onClick={handleInstallClick}
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
+              className="mt-10 mx-auto px-4 py-2 bg-green-500 text-black rounded-md flex"
             >
               Install App
             </button>

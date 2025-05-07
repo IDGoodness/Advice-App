@@ -9,11 +9,11 @@ const Card = ({ advice, fetchAdvice }) => {
         // console.log(advice.slip.id);
     }    
     return (
-    <div className='bg-[#2f343c] relative flex-col rounded-md flex  items-center justify-evenly p-10 shadow w-[90%] min-h-[50%] max-w-[500px] max-h-[400px]'>
+    <div className='bg-[#2f343c] relative flex-col rounded-md flex  items-center justify-center mx-auto p-10 shadow w-[90%] min-h-[50%] max-w-[500px] max-h-[400px]'>
 
         <Link to={'/search'}
             className='absolute top-[-23px] w-14 h-14 rounded-full bg-green-500 flex items-center justify-center transition duration-300 ease-in-out  hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.5)] active:scale-95'>
-                <span class="material-icons-round text-[#14181f] transition duration-300 hover:scale-110">search</span>
+                <span className="material-icons-round text-[#14181f] transition duration-300 hover:scale-110">search</span>
         </Link>
 
         <p className='text-[12px] tracking-widest text-[#53ffaa] text'>ADVICE #{}</p>
