@@ -1,49 +1,17 @@
 {
-"name": "Advice Generator",
-"short_name": "Advice",
-"start_url": ".",
-"display": "standalone",
-"description": "Get random advice from the Advice Generator app.",
-"lang": "en-US",
-"dir": "auto",
-"theme_color": "#000000",
-"background_color": "#000000",
-"orientation": "any",
-"icons": [
+  "lang": "en-us",
+  "name": "Advice Generating App",
+  "short_name": "Advice App",
+  "description": "Get random advice from the internet using the Advice Slip API.",
+  "start_url": "/",
+  "background_color": "#2f3d58",
+  "theme_color": "#2f3d58",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [
     {
-        "src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "maskable"
-    },
-    {
-        "src": "https://www.pwabuilder.com/assets/icons/icon_192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any"
+      "src": "/icon-dice.png",
+      "sizes": "512x512"
     }
-],
-"screenshots": [
-    {
-        "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
-        "sizes": "2880x1800",
-        "type": "image/png",
-        "description": "A screenshot of the home page"
-    }
-],
-"shortcuts": [
-    {
-        "name": "Get Advice",
-        "short_name": "Advice",
-        "description": "Get random advice",
-        "url": "/",
-        "icons": [
-            {
-                "src": "https://www.pwabuilder.com/assets/icons/icon_192.png",
-                "sizes": "192x192",
-                "type": "image/png"
-            }
-        ]
-    }
-]
+  ]
 }
